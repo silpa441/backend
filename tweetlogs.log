@@ -1,0 +1,1121 @@
+2022-06-05 09:03:11.589  INFO 4940 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 11.0.15 on LTIN293123 with PID 4940 (C:\Users\896825\Videos\TweetAPP\TweetAppBackEnd\target\classes started by 896825 in C:\Users\896825\Videos\TweetAPP\TweetAppBackEnd)
+2022-06-05 09:03:11.591 DEBUG 4940 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2022-06-05 09:03:11.591  INFO 4940 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2022-06-05 09:03:11.665  INFO 4940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-05 09:03:11.665  INFO 4940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-05 09:03:13.268  INFO 4940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-05 09:03:13.335  INFO 4940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 2 MongoDB repository interfaces.
+2022-06-05 09:03:14.096  INFO 4940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-05 09:03:14.111  INFO 4940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-05 09:03:14.112  INFO 4940 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-06-05 09:03:14.225  INFO 4940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-05 09:03:14.226  INFO 4940 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2560 ms
+2022-06-05 09:03:14.481 DEBUG 4940 --- [restartedMain] TFilter$$EnhancerBySpringCGLIB$$70820200 : Filter 'JWTFilter' configured for use
+2022-06-05 09:03:14.698  INFO 4940 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[tweetapp-mongodb.mongo.cosmos.azure.com:10255], mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='globaldb'}
+2022-06-05 09:03:14.699  INFO 4940 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server tweetapp-mongodb.mongo.cosmos.azure.com:10255 to client view of cluster
+2022-06-05 09:03:14.969  INFO 4940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-05 09:03:15.783  INFO 4940 --- [cluster-ClusterId{value='629c23fa00fe2b5d4fe5cfa8', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:1382329393}] to tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:03:15.787  INFO 4940 --- [cluster-ClusterId{value='629c23fa00fe2b5d4fe5cfa8', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tweetapp-mongodb.mongo.cosmos.azure.com:10255, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=469272500, setName='globaldb', canonicalAddress=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, hosts=[tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255], passives=[], arbiters=[], primary='tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255', tagSet=TagSet{[Tag{name='region', value='Central India'}]}, electionId=null, setVersion=1, topologyVersion=null, lastWriteDate=null, lastUpdateTimeNanos=1090757761033900}
+2022-06-05 09:03:15.791  INFO 4940 --- [cluster-ClusterId{value='629c23fa00fe2b5d4fe5cfa8', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Adding discovered server tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255 to client view of cluster
+2022-06-05 09:03:15.809  INFO 4940 --- [cluster-ClusterId{value='629c23fa00fe2b5d4fe5cfa8', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Server tweetapp-mongodb.mongo.cosmos.azure.com:10255 is no longer a member of the replica set.  Removing from client view of cluster.
+2022-06-05 09:03:15.817  INFO 4940 --- [cluster-ClusterId{value='629c23fa00fe2b5d4fe5cfa8', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Setting max set version to 1 from replica set primary tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:03:15.817  INFO 4940 --- [cluster-ClusterId{value='629c23fa00fe2b5d4fe5cfa8', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Discovered replica set primary tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:03:16.009  INFO 4940 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-06-05 09:03:16.261  INFO 4940 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-05 09:03:16.444  INFO 4940 --- [cluster-rtt-ClusterId{value='629c23fa00fe2b5d4fe5cfa8', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:368640399}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:03:16.723  INFO 4940 --- [cluster-ClusterId{value='629c23fa00fe2b5d4fe5cfa8', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:850210915}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:03:16.723  INFO 4940 --- [cluster-ClusterId{value='629c23fa00fe2b5d4fe5cfa8', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=578977000, setName='globaldb', canonicalAddress=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, hosts=[tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255], passives=[], arbiters=[], primary='tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255', tagSet=TagSet{[Tag{name='region', value='Central India'}]}, electionId=null, setVersion=1, topologyVersion=null, lastWriteDate=null, lastUpdateTimeNanos=1090758702257100}
+2022-06-05 09:03:16.724  INFO 4940 --- [cluster-ClusterId{value='629c23fa00fe2b5d4fe5cfa8', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Discovered replica set primary tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:03:16.776  INFO 4940 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [tweetapp-kafka.servicebus.windows.net:9093]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-05 09:03:17.075  INFO 4940 --- [restartedMain] o.a.k.c.s.authenticator.AbstractLogin    : Successfully logged in.
+2022-06-05 09:03:17.193  INFO 4940 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-06-05 09:03:17.195  INFO 4940 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-06-05 09:03:17.195  INFO 4940 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1654399997192
+2022-06-05 09:03:17.225  INFO 4940 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): kafkaMessage
+2022-06-05 09:03:17.232  INFO 4940 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-06-05 09:03:17.257  INFO 4940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-05 09:03:17.258  INFO 4940 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-06-05 09:03:17.285  INFO 4940 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-06-05 09:03:17.298  INFO 4940 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-06-05 09:03:17.514  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-06-05 09:03:17.521  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2022-06-05 09:03:17.525  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-06-05 09:03:17.529  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2022-06-05 09:03:17.531  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2022-06-05 09:03:17.535  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2022-06-05 09:03:17.539  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2022-06-05 09:03:17.542  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2022-06-05 09:03:17.545  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2022-06-05 09:03:17.547  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2022-06-05 09:03:17.550  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2022-06-05 09:03:17.552  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2022-06-05 09:03:17.554  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2022-06-05 09:03:17.557  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2022-06-05 09:03:17.560  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2022-06-05 09:03:17.562  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2022-06-05 09:03:17.565  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2022-06-05 09:03:17.567  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2022-06-05 09:03:17.569  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2022-06-05 09:03:17.571  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2022-06-05 09:03:17.573  INFO 4940 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2022-06-05 09:03:17.730  INFO 4940 --- [restartedMain] com.tweetapp.api.TweetApplication        : Started TweetApplication in 6.656 seconds (JVM running for 7.75)
+2022-06-05 09:03:18.451  INFO 4940 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator tweetapp-kafka.servicebus.windows.net:9093 (id: 2147483647 rack: null)
+2022-06-05 09:03:18.455  INFO 4940 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-06-05 09:03:22.359  INFO 4940 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Finished assignment for group at generation 8: {tweetapp-kafka.servicebus.windows.net:c:group_id:I:consumer-group_id-1-8a7d73ff962146d3b02dd8b897b1d7df=Assignment(partitions=[kafkaMessage-0])}
+2022-06-05 09:03:22.559  INFO 4940 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation 8
+2022-06-05 09:03:22.561  INFO 4940 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Notifying assignor about the new Assignment(partitions=[kafkaMessage-0])
+2022-06-05 09:03:22.567  INFO 4940 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: kafkaMessage-0
+2022-06-05 09:03:22.664  INFO 4940 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition kafkaMessage-0 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[tweetapp-kafka.servicebus.windows.net:9093 (id: 0 rack: null)], epoch=absent}}
+2022-06-05 09:03:22.777  INFO 4940 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkaMessage-0]
+2022-06-05 09:07:37.919  INFO 4940 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-06-05 09:07:38.170  INFO 4940 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Revoke previously assigned partitions kafkaMessage-0
+2022-06-05 09:07:38.171  INFO 4940 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [kafkaMessage-0]
+2022-06-05 09:07:38.172  INFO 4940 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Member tweetapp-kafka.servicebus.windows.net:c:group_id:I:consumer-group_id-1-8a7d73ff962146d3b02dd8b897b1d7df sending LeaveGroup request to coordinator tweetapp-kafka.servicebus.windows.net:9093 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-06-05 09:07:38.173  INFO 4940 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-1, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+2022-06-05 09:07:38.174  INFO 4940 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-06-05 09:07:38.371  INFO 4940 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : group_id: Consumer stopped
+2022-06-05 09:07:38.388  INFO 4940 --- [RMI TCP Connection(14)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-05 09:08:09.602  INFO 19504 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 11.0.15 on LTIN293123 with PID 19504 (C:\Users\896825\Videos\TweetAPP\TweetAppBackEnd\target\classes started by 896825 in C:\Users\896825\Videos\TweetAPP\TweetAppBackEnd)
+2022-06-05 09:08:09.603 DEBUG 19504 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2022-06-05 09:08:09.604  INFO 19504 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2022-06-05 09:08:09.666  INFO 19504 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-05 09:08:09.667  INFO 19504 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-05 09:08:11.298  INFO 19504 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-05 09:08:11.373  INFO 19504 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 MongoDB repository interfaces.
+2022-06-05 09:08:12.140  INFO 19504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-05 09:08:12.151  INFO 19504 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-05 09:08:12.152  INFO 19504 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-06-05 09:08:12.272  INFO 19504 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-05 09:08:12.272  INFO 19504 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2604 ms
+2022-06-05 09:08:12.516 DEBUG 19504 --- [restartedMain] TFilter$$EnhancerBySpringCGLIB$$dfe4fa10 : Filter 'JWTFilter' configured for use
+2022-06-05 09:08:12.688  INFO 19504 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[tweetapp-mongodb.mongo.cosmos.azure.com:10255], mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='globaldb'}
+2022-06-05 09:08:12.688  INFO 19504 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server tweetapp-mongodb.mongo.cosmos.azure.com:10255 to client view of cluster
+2022-06-05 09:08:12.955  INFO 19504 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-05 09:08:13.936  INFO 19504 --- [cluster-rtt-ClusterId{value='629c252467e00525d1b953aa', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:715863703}] to tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:08:13.937  INFO 19504 --- [cluster-ClusterId{value='629c252467e00525d1b953aa', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1021000152}] to tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:08:13.939  INFO 19504 --- [cluster-ClusterId{value='629c252467e00525d1b953aa', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tweetapp-mongodb.mongo.cosmos.azure.com:10255, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=717491100, setName='globaldb', canonicalAddress=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, hosts=[tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255], passives=[], arbiters=[], primary='tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255', tagSet=TagSet{[Tag{name='region', value='Central India'}]}, electionId=null, setVersion=1, topologyVersion=null, lastWriteDate=null, lastUpdateTimeNanos=1091055914314800}
+2022-06-05 09:08:13.941  INFO 19504 --- [cluster-ClusterId{value='629c252467e00525d1b953aa', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Adding discovered server tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255 to client view of cluster
+2022-06-05 09:08:13.942  INFO 19504 --- [cluster-ClusterId{value='629c252467e00525d1b953aa', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Server tweetapp-mongodb.mongo.cosmos.azure.com:10255 is no longer a member of the replica set.  Removing from client view of cluster.
+2022-06-05 09:08:13.948  INFO 19504 --- [cluster-ClusterId{value='629c252467e00525d1b953aa', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Setting max set version to 1 from replica set primary tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:08:13.949  INFO 19504 --- [cluster-ClusterId{value='629c252467e00525d1b953aa', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Discovered replica set primary tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:08:13.965  INFO 19504 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-06-05 09:08:14.161  INFO 19504 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-05 09:08:14.683  INFO 19504 --- [cluster-rtt-ClusterId{value='629c252467e00525d1b953aa', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:1497630000}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:08:14.720  INFO 19504 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [tweetapp-kafka.servicebus.windows.net:9093]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-05 09:08:14.788  INFO 19504 --- [cluster-ClusterId{value='629c252467e00525d1b953aa', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:1905609103}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:08:14.789  INFO 19504 --- [cluster-ClusterId{value='629c252467e00525d1b953aa', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=418754700, setName='globaldb', canonicalAddress=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, hosts=[tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255], passives=[], arbiters=[], primary='tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255', tagSet=TagSet{[Tag{name='region', value='Central India'}]}, electionId=null, setVersion=1, topologyVersion=null, lastWriteDate=null, lastUpdateTimeNanos=1091056766509600}
+2022-06-05 09:08:14.789  INFO 19504 --- [cluster-ClusterId{value='629c252467e00525d1b953aa', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Discovered replica set primary tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:08:15.095  INFO 19504 --- [restartedMain] o.a.k.c.s.authenticator.AbstractLogin    : Successfully logged in.
+2022-06-05 09:08:15.223  INFO 19504 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-06-05 09:08:15.226  INFO 19504 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-06-05 09:08:15.226  INFO 19504 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1654400295221
+2022-06-05 09:08:15.271  INFO 19504 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): kafkaMessage
+2022-06-05 09:08:15.281  INFO 19504 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-06-05 09:08:15.310  INFO 19504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-05 09:08:15.311  INFO 19504 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-06-05 09:08:15.341  INFO 19504 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-06-05 09:08:15.356  INFO 19504 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-06-05 09:08:15.617  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-06-05 09:08:15.621  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-06-05 09:08:15.624  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2022-06-05 09:08:15.628  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2022-06-05 09:08:15.630  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2022-06-05 09:08:15.633  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2022-06-05 09:08:15.636  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2022-06-05 09:08:15.639  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2022-06-05 09:08:15.643  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2022-06-05 09:08:15.648  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2022-06-05 09:08:15.652  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2022-06-05 09:08:15.656  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2022-06-05 09:08:15.664  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2022-06-05 09:08:15.667  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2022-06-05 09:08:15.671  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2022-06-05 09:08:15.674  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2022-06-05 09:08:15.676  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2022-06-05 09:08:15.680  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2022-06-05 09:08:15.683  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2022-06-05 09:08:15.685  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2022-06-05 09:08:15.688  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2022-06-05 09:08:15.861  INFO 19504 --- [restartedMain] com.tweetapp.api.TweetApplication        : Started TweetApplication in 6.724 seconds (JVM running for 7.87)
+2022-06-05 09:08:16.838  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator tweetapp-kafka.servicebus.windows.net:9093 (id: 2147483647 rack: null)
+2022-06-05 09:08:16.843  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-06-05 09:08:20.824  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-1, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+2022-06-05 09:08:20.825  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-06-05 09:08:20.891  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : group_id: Consumer stopped
+2022-06-05 09:08:20.903  INFO 19504 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-05 09:08:20.974 DEBUG 19504 --- [restartedMain] com.tweetapp.api.TweetApplication        : ===========> Tweet App Started <===========
+2022-06-05 09:08:21.011  INFO 19504 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 11.0.15 on LTIN293123 with PID 19504 (C:\Users\896825\Videos\TweetAPP\TweetAppBackEnd\target\classes started by 896825 in C:\Users\896825\Videos\TweetAPP\TweetAppBackEnd)
+2022-06-05 09:08:21.012 DEBUG 19504 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2022-06-05 09:08:21.012  INFO 19504 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2022-06-05 09:08:21.596  INFO 19504 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-05 09:08:21.621  INFO 19504 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 MongoDB repository interfaces.
+2022-06-05 09:08:21.724  INFO 19504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-05 09:08:21.725  INFO 19504 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-05 09:08:21.725  INFO 19504 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-06-05 09:08:21.759  INFO 19504 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-05 09:08:21.760  INFO 19504 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 745 ms
+2022-06-05 09:08:21.806 DEBUG 19504 --- [restartedMain] TFilter$$EnhancerBySpringCGLIB$$dfe4fa10 : Filter 'JWTFilter' configured for use
+2022-06-05 09:08:21.830  INFO 19504 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[tweetapp-mongodb.mongo.cosmos.azure.com:10255], mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='globaldb'}
+2022-06-05 09:08:21.830  INFO 19504 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server tweetapp-mongodb.mongo.cosmos.azure.com:10255 to client view of cluster
+2022-06-05 09:08:21.863  INFO 19504 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-05 09:08:22.127  INFO 19504 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-06-05 09:08:22.182  INFO 19504 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-05 09:08:22.286  INFO 19504 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [tweetapp-kafka.servicebus.windows.net:9093]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-05 09:08:22.288  INFO 19504 --- [restartedMain] o.a.k.c.s.authenticator.AbstractLogin    : Successfully logged in.
+2022-06-05 09:08:22.293  INFO 19504 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-06-05 09:08:22.294  INFO 19504 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-06-05 09:08:22.294  INFO 19504 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1654400302293
+2022-06-05 09:08:22.305  INFO 19504 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-2, groupId=group_id] Subscribed to topic(s): kafkaMessage
+2022-06-05 09:08:22.305  INFO 19504 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-06-05 09:08:22.312  INFO 19504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-05 09:08:22.313  INFO 19504 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-06-05 09:08:22.314  INFO 19504 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-06-05 09:08:22.324  INFO 19504 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-06-05 09:08:22.350  INFO 19504 --- [cluster-rtt-ClusterId{value='629c252d67e00525d1b953ab', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:1837568122}] to tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:08:22.363  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-06-05 09:08:22.364  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-06-05 09:08:22.366  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2022-06-05 09:08:22.367  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2022-06-05 09:08:22.370  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2022-06-05 09:08:22.372  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2022-06-05 09:08:22.373  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2022-06-05 09:08:22.375  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2022-06-05 09:08:22.376  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2022-06-05 09:08:22.378  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2022-06-05 09:08:22.379  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2022-06-05 09:08:22.381  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2022-06-05 09:08:22.384  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2022-06-05 09:08:22.386  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2022-06-05 09:08:22.387  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2022-06-05 09:08:22.389  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2022-06-05 09:08:22.390  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2022-06-05 09:08:22.393  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2022-06-05 09:08:22.395  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2022-06-05 09:08:22.397  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2022-06-05 09:08:22.398  INFO 19504 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2022-06-05 09:08:22.427  INFO 19504 --- [cluster-ClusterId{value='629c252d67e00525d1b953ab', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:1225273083}] to tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:08:22.428  INFO 19504 --- [cluster-ClusterId{value='629c252d67e00525d1b953ab', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tweetapp-mongodb.mongo.cosmos.azure.com:10255, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=505364500, setName='globaldb', canonicalAddress=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, hosts=[tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255], passives=[], arbiters=[], primary='tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255', tagSet=TagSet{[Tag{name='region', value='Central India'}]}, electionId=null, setVersion=1, topologyVersion=null, lastWriteDate=null, lastUpdateTimeNanos=1091064406530600}
+2022-06-05 09:08:22.428  INFO 19504 --- [cluster-ClusterId{value='629c252d67e00525d1b953ab', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Adding discovered server tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255 to client view of cluster
+2022-06-05 09:08:22.429  INFO 19504 --- [cluster-ClusterId{value='629c252d67e00525d1b953ab', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Server tweetapp-mongodb.mongo.cosmos.azure.com:10255 is no longer a member of the replica set.  Removing from client view of cluster.
+2022-06-05 09:08:22.432  INFO 19504 --- [cluster-ClusterId{value='629c252d67e00525d1b953ab', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Setting max set version to 1 from replica set primary tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:08:22.432  INFO 19504 --- [cluster-ClusterId{value='629c252d67e00525d1b953ab', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Discovered replica set primary tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:08:22.507  INFO 19504 --- [restartedMain] com.tweetapp.api.TweetApplication        : Started TweetApplication in 1.527 seconds (JVM running for 14.516)
+2022-06-05 09:08:22.511  INFO 19504 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-05 09:08:22.770  INFO 19504 --- [cluster-rtt-ClusterId{value='629c252d67e00525d1b953ab', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:8, serverValue:1003747013}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:08:22.907  INFO 19504 --- [cluster-ClusterId{value='629c252d67e00525d1b953ab', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:1752650566}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:08:22.908  INFO 19504 --- [cluster-ClusterId{value='629c252d67e00525d1b953ab', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=396647500, setName='globaldb', canonicalAddress=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, hosts=[tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255], passives=[], arbiters=[], primary='tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255', tagSet=TagSet{[Tag{name='region', value='Central India'}]}, electionId=null, setVersion=1, topologyVersion=null, lastWriteDate=null, lastUpdateTimeNanos=1091064886469899}
+2022-06-05 09:08:22.908  INFO 19504 --- [cluster-ClusterId{value='629c252d67e00525d1b953ab', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Discovered replica set primary tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:08:23.148  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Discovered group coordinator tweetapp-kafka.servicebus.windows.net:9093 (id: 2147483647 rack: null)
+2022-06-05 09:08:23.151  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] (Re-)joining group
+2022-06-05 09:08:44.242  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Finished assignment for group at generation 10: {tweetapp-kafka.servicebus.windows.net:c:group_id:I:consumer-group_id-2-78c0726e82ae492ab62d9ddefcd8178f=Assignment(partitions=[kafkaMessage-0])}
+2022-06-05 09:08:44.325  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Successfully joined group with generation 10
+2022-06-05 09:08:44.326  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Notifying assignor about the new Assignment(partitions=[kafkaMessage-0])
+2022-06-05 09:08:44.329  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Adding newly assigned partitions: kafkaMessage-0
+2022-06-05 09:08:44.453  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Setting offset for partition kafkaMessage-0 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[tweetapp-kafka.servicebus.windows.net:9093 (id: 0 rack: null)], epoch=absent}}
+2022-06-05 09:08:44.455  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkaMessage-0]
+2022-06-05 09:12:29.353  INFO 19504 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-06-05 09:12:29.561  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Revoke previously assigned partitions kafkaMessage-0
+2022-06-05 09:12:29.563  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [kafkaMessage-0]
+2022-06-05 09:12:29.564  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Member tweetapp-kafka.servicebus.windows.net:c:group_id:I:consumer-group_id-2-78c0726e82ae492ab62d9ddefcd8178f sending LeaveGroup request to coordinator tweetapp-kafka.servicebus.windows.net:9093 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-06-05 09:12:29.565  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-2, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+2022-06-05 09:12:29.565  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-06-05 09:12:29.737  INFO 19504 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : group_id: Consumer stopped
+2022-06-05 09:12:29.741  INFO 19504 --- [RMI TCP Connection(14)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-05 09:13:47.919  INFO 1432 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 11.0.15 on LTIN293123 with PID 1432 (C:\Users\896825\Videos\TweetAPP\TweetAppBackEnd\target\classes started by 896825 in C:\Users\896825\Videos\TweetAPP\TweetAppBackEnd)
+2022-06-05 09:13:47.920 DEBUG 1432 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2022-06-05 09:13:47.921  INFO 1432 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2022-06-05 09:13:47.988  INFO 1432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-05 09:13:47.989  INFO 1432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-05 09:13:49.640  INFO 1432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-05 09:13:49.845  INFO 1432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 196 ms. Found 2 MongoDB repository interfaces.
+2022-06-05 09:13:50.651  INFO 1432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-05 09:13:50.663  INFO 1432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-05 09:13:50.664  INFO 1432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-06-05 09:13:50.776  INFO 1432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-05 09:13:50.777  INFO 1432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2787 ms
+2022-06-05 09:13:51.053 DEBUG 1432 --- [restartedMain] TFilter$$EnhancerBySpringCGLIB$$835aee2d : Filter 'JWTFilter' configured for use
+2022-06-05 09:13:51.265  INFO 1432 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[tweetapp-mongodb.mongo.cosmos.azure.com:10255], mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='globaldb'}
+2022-06-05 09:13:51.266  INFO 1432 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server tweetapp-mongodb.mongo.cosmos.azure.com:10255 to client view of cluster
+2022-06-05 09:13:51.550  INFO 1432 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-05 09:13:52.315  INFO 1432 --- [cluster-rtt-ClusterId{value='629c26777a9af102a754632d', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:567089087}] to tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:13:52.413  INFO 1432 --- [cluster-ClusterId{value='629c26777a9af102a754632d', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:797243110}] to tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:13:52.414  INFO 1432 --- [cluster-ClusterId{value='629c26777a9af102a754632d', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tweetapp-mongodb.mongo.cosmos.azure.com:10255, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=565503300, setName='globaldb', canonicalAddress=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, hosts=[tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255], passives=[], arbiters=[], primary='tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255', tagSet=TagSet{[Tag{name='region', value='Central India'}]}, electionId=null, setVersion=1, topologyVersion=null, lastWriteDate=null, lastUpdateTimeNanos=1091394392000900}
+2022-06-05 09:13:52.416  INFO 1432 --- [cluster-ClusterId{value='629c26777a9af102a754632d', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Adding discovered server tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255 to client view of cluster
+2022-06-05 09:13:52.418  INFO 1432 --- [cluster-ClusterId{value='629c26777a9af102a754632d', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Server tweetapp-mongodb.mongo.cosmos.azure.com:10255 is no longer a member of the replica set.  Removing from client view of cluster.
+2022-06-05 09:13:52.424  INFO 1432 --- [cluster-ClusterId{value='629c26777a9af102a754632d', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Setting max set version to 1 from replica set primary tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:13:52.424  INFO 1432 --- [cluster-ClusterId{value='629c26777a9af102a754632d', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Discovered replica set primary tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:13:52.529  INFO 1432 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-06-05 09:13:52.729  INFO 1432 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-05 09:13:53.238  INFO 1432 --- [cluster-rtt-ClusterId{value='629c26777a9af102a754632d', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:1498682886}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:13:53.253  INFO 1432 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [tweetapp-kafka.servicebus.windows.net:9093]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-05 09:13:53.255  INFO 1432 --- [cluster-ClusterId{value='629c26777a9af102a754632d', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:1819130934}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:13:53.256  INFO 1432 --- [cluster-ClusterId{value='629c26777a9af102a754632d', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=458900000, setName='globaldb', canonicalAddress=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, hosts=[tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255], passives=[], arbiters=[], primary='tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255', tagSet=TagSet{[Tag{name='region', value='Central India'}]}, electionId=null, setVersion=1, topologyVersion=null, lastWriteDate=null, lastUpdateTimeNanos=1091395233906900}
+2022-06-05 09:13:53.257  INFO 1432 --- [cluster-ClusterId{value='629c26777a9af102a754632d', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Discovered replica set primary tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:13:53.573  INFO 1432 --- [restartedMain] o.a.k.c.s.authenticator.AbstractLogin    : Successfully logged in.
+2022-06-05 09:13:53.662  INFO 1432 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-06-05 09:13:53.664  INFO 1432 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-06-05 09:13:53.664  INFO 1432 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1654400633660
+2022-06-05 09:13:53.694  INFO 1432 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): kafkanewMessage
+2022-06-05 09:13:53.701  INFO 1432 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-06-05 09:13:53.722  INFO 1432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-05 09:13:53.724  INFO 1432 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-06-05 09:13:53.743  INFO 1432 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-06-05 09:13:53.753  INFO 1432 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-06-05 09:13:53.948  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-06-05 09:13:53.956  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-06-05 09:13:53.959  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2022-06-05 09:13:53.962  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2022-06-05 09:13:53.965  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2022-06-05 09:13:53.967  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2022-06-05 09:13:53.968  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2022-06-05 09:13:53.970  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2022-06-05 09:13:53.972  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2022-06-05 09:13:53.975  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2022-06-05 09:13:53.979  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2022-06-05 09:13:53.982  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2022-06-05 09:13:53.984  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2022-06-05 09:13:53.990  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2022-06-05 09:13:53.993  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2022-06-05 09:13:53.996  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2022-06-05 09:13:53.998  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2022-06-05 09:13:54.000  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2022-06-05 09:13:54.003  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2022-06-05 09:13:54.006  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2022-06-05 09:13:54.009  INFO 1432 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2022-06-05 09:13:54.157  INFO 1432 --- [restartedMain] com.tweetapp.api.TweetApplication        : Started TweetApplication in 6.797 seconds (JVM running for 7.859)
+2022-06-05 09:13:57.320  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator tweetapp-kafka.servicebus.windows.net:9093 (id: 2147483647 rack: null)
+2022-06-05 09:13:57.325  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-06-05 09:14:01.332  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Finished assignment for group at generation 11: {tweetapp-kafka.servicebus.windows.net:c:group_id:I:consumer-group_id-1-8f85e6a1905f4f8d8dc9056b34dacbcf=Assignment(partitions=[kafkanewMessage-0])}
+2022-06-05 09:14:01.436  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation 11
+2022-06-05 09:14:01.437  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Notifying assignor about the new Assignment(partitions=[kafkanewMessage-0])
+2022-06-05 09:14:01.441  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: kafkanewMessage-0
+2022-06-05 09:14:01.676  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Found no committed offset for partition kafkanewMessage-0
+2022-06-05 09:14:02.525  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting offset for partition kafkanewMessage-0 to offset 0.
+2022-06-05 09:14:02.527  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkanewMessage-0]
+2022-06-05 09:16:54.948  INFO 1432 --- [RMI TCP Connection(12)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-05 09:16:54.949  INFO 1432 --- [RMI TCP Connection(12)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-05 09:16:54.950  INFO 1432 --- [RMI TCP Connection(12)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-05 09:20:55.219  INFO 1432 --- [http-nio-8080-exec-1] c.t.api.controller.TweetAppController    : User created successfully!!!...
+2022-06-05 09:20:55.221  INFO 1432 --- [http-nio-8080-exec-1] c.tweetapp.api.service.UserServiceImpl   : ===Inside CreatUser===
+2022-06-05 09:20:56.473  INFO 1432 --- [http-nio-8080-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:119465400}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:20:56.719  INFO 1432 --- [http-nio-8080-exec-1] c.tweetapp.api.service.UserServiceImpl   : Registration successfully...
+2022-06-05 09:21:07.463 DEBUG 1432 --- [http-nio-8080-exec-3] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-06-05 09:21:07.464 DEBUG 1432 --- [http-nio-8080-exec-3] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-06-05 09:21:07.646  INFO 1432 --- [http-nio-8080-exec-3] c.tweetapp.api.service.UserServiceImpl   : sai--Logged in Successfully..!
+2022-06-05 09:21:07.846  WARN 1432 --- [http-nio-8080-exec-3] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [194] milliseconds.
+2022-06-05 09:21:07.976  INFO 1432 --- [http-nio-8080-exec-5] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:21:07.976  INFO 1432 --- [http-nio-8080-exec-5] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:21:07.987  INFO 1432 --- [http-nio-8080-exec-5] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [tweetapp-kafka.servicebus.windows.net:9093]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2022-06-05 09:21:08.480  INFO 1432 --- [http-nio-8080-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-06-05 09:21:08.481  INFO 1432 --- [http-nio-8080-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-06-05 09:21:08.481  INFO 1432 --- [http-nio-8080-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1654401068480
+2022-06-05 09:21:09.388  INFO 1432 --- [http-nio-8080-exec-5] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:21:10.298  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:21:10.298  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:21:41.051  INFO 1432 --- [http-nio-8080-exec-7] c.t.api.controller.TweetAppController    : Retrived all the users
+2022-06-05 09:21:41.052  INFO 1432 --- [http-nio-8080-exec-7] c.tweetapp.api.service.UserServiceImpl   : Retriving all the users
+2022-06-05 09:21:44.897  INFO 1432 --- [http-nio-8080-exec-9] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:21:44.897  INFO 1432 --- [http-nio-8080-exec-9] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:21:44.898  INFO 1432 --- [http-nio-8080-exec-9] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:21:45.090  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:21:45.091  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:21:57.745 DEBUG 1432 --- [http-nio-8080-exec-1] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-06-05 09:21:57.747 DEBUG 1432 --- [http-nio-8080-exec-1] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-06-05 09:21:57.890  INFO 1432 --- [http-nio-8080-exec-1] c.tweetapp.api.service.UserServiceImpl   : Login failed
+2022-06-05 09:22:01.499 DEBUG 1432 --- [http-nio-8080-exec-3] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-06-05 09:22:01.500 DEBUG 1432 --- [http-nio-8080-exec-3] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-06-05 09:22:01.628  INFO 1432 --- [http-nio-8080-exec-3] c.tweetapp.api.service.UserServiceImpl   : Login failed
+2022-06-05 09:22:04.276 DEBUG 1432 --- [http-nio-8080-exec-5] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-06-05 09:22:04.277 DEBUG 1432 --- [http-nio-8080-exec-5] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-06-05 09:22:04.371  INFO 1432 --- [http-nio-8080-exec-5] c.tweetapp.api.service.UserServiceImpl   : Login failed
+2022-06-05 09:22:13.675 DEBUG 1432 --- [http-nio-8080-exec-7] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-06-05 09:22:13.676 DEBUG 1432 --- [http-nio-8080-exec-7] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-06-05 09:22:13.770  INFO 1432 --- [http-nio-8080-exec-7] c.tweetapp.api.service.UserServiceImpl   : Login failed
+2022-06-05 09:24:52.428  INFO 1432 --- [MaintenanceTimer-2-thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:5, serverValue:119465400}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255 because it is past its maximum allowed idle time.
+2022-06-05 09:25:39.651 DEBUG 1432 --- [http-nio-8080-exec-8] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-06-05 09:25:39.652 DEBUG 1432 --- [http-nio-8080-exec-8] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-06-05 09:25:40.633  INFO 1432 --- [http-nio-8080-exec-8] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:1442477910}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:25:40.856  INFO 1432 --- [http-nio-8080-exec-8] c.tweetapp.api.service.UserServiceImpl   : suri--Logged in Successfully..!
+2022-06-05 09:25:40.908  INFO 1432 --- [http-nio-8080-exec-2] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:25:40.909  INFO 1432 --- [http-nio-8080-exec-2] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:25:40.909  INFO 1432 --- [http-nio-8080-exec-2] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:25:41.101  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:25:41.101  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:25:44.504  INFO 1432 --- [http-nio-8080-exec-4] c.tweetapp.api.service.TweetServiceImpl  : Deleted thw tweet for the tweet id62998019cb2f3c0b50e77761
+2022-06-05 09:25:44.505  INFO 1432 --- [http-nio-8080-exec-4] c.t.api.controller.TweetAppController    : Tweet deleted by the user
+2022-06-05 09:25:44.530  INFO 1432 --- [http-nio-8080-exec-6] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:25:44.531  INFO 1432 --- [http-nio-8080-exec-6] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:25:44.532  INFO 1432 --- [http-nio-8080-exec-6] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:25:44.653  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:25:44.654  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:25:51.250  INFO 1432 --- [http-nio-8080-exec-10] c.t.api.controller.TweetAppController    : Tweet successfully posted by the user
+2022-06-05 09:25:51.377  INFO 1432 --- [http-nio-8080-exec-10] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:25:51.379  INFO 1432 --- [http-nio-8080-exec-10] c.tweetapp.api.service.TweetServiceImpl  : Tweet posted by user: suri
+2022-06-05 09:25:51.494  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Tweet posted by the user : suri
+2022-06-05 09:25:51.495  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Tweet posted by the user : suri
+2022-06-05 09:25:51.586  INFO 1432 --- [http-nio-8080-exec-8] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:25:51.587  INFO 1432 --- [http-nio-8080-exec-8] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:25:51.588  INFO 1432 --- [http-nio-8080-exec-8] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:25:51.701  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:25:51.702  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:25:54.853  INFO 1432 --- [http-nio-8080-exec-2] c.tweetapp.api.service.TweetServiceImpl  : Deleted thw tweet for the tweet id629c29477a9af102a754632f
+2022-06-05 09:25:54.853  INFO 1432 --- [http-nio-8080-exec-2] c.t.api.controller.TweetAppController    : Tweet deleted by the user
+2022-06-05 09:25:54.873  INFO 1432 --- [http-nio-8080-exec-4] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:25:54.873  INFO 1432 --- [http-nio-8080-exec-4] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:25:54.874  INFO 1432 --- [http-nio-8080-exec-4] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:25:54.992  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:25:54.992  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:26:10.751  INFO 1432 --- [http-nio-8080-exec-6] c.t.api.controller.TweetAppController    : Tweet successfully posted by the user
+2022-06-05 09:26:10.870  INFO 1432 --- [http-nio-8080-exec-6] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:26:10.870  INFO 1432 --- [http-nio-8080-exec-6] c.tweetapp.api.service.TweetServiceImpl  : Tweet posted by user: suri
+2022-06-05 09:26:10.982  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Tweet posted by the user : suri
+2022-06-05 09:26:10.983  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Tweet posted by the user : suri
+2022-06-05 09:26:10.992  INFO 1432 --- [http-nio-8080-exec-10] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:26:10.992  INFO 1432 --- [http-nio-8080-exec-10] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:26:10.993  INFO 1432 --- [http-nio-8080-exec-10] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:26:11.095  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:26:11.095  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:26:23.217  INFO 1432 --- [http-nio-8080-exec-8] c.t.api.controller.TweetAppController    : Tweet successfully updated by the user
+2022-06-05 09:26:23.217  INFO 1432 --- [http-nio-8080-exec-8] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:26:23.218  INFO 1432 --- [http-nio-8080-exec-8] c.tweetapp.api.service.TweetServiceImpl  : Tweet is updated successfully...
+2022-06-05 09:26:23.311  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Tweet is updated..
+2022-06-05 09:26:23.312  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Tweet is updated..
+2022-06-05 09:26:23.347  INFO 1432 --- [http-nio-8080-exec-2] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:26:23.348  INFO 1432 --- [http-nio-8080-exec-2] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:26:23.349  INFO 1432 --- [http-nio-8080-exec-2] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:26:23.455  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:26:23.455  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:26:35.835  INFO 1432 --- [http-nio-8080-exec-4] c.t.api.controller.TweetAppController    : Replying to the tweet by user
+2022-06-05 09:26:36.118  INFO 1432 --- [http-nio-8080-exec-6] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:26:36.119  INFO 1432 --- [http-nio-8080-exec-6] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:26:36.120  INFO 1432 --- [http-nio-8080-exec-6] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:26:36.232  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:26:36.232  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:26:43.255  INFO 1432 --- [http-nio-8080-exec-10] c.tweetapp.api.service.TweetServiceImpl  : Liked Tweet with Id: 629c295a7a9af102a7546330 is Tweet [id=629c295a7a9af102a7546330, tweet=hey you, postDate=2022-06-05T09:26:10.871, likes=0, user=User [id=62970e6f7a9af102a7546331, username=suri, password=Sai@1234, email=suri@gmail.com, firstName=suri, lastName=suri, contactNumber=9701930783], replies=[Tweet [id=null, tweet=hey you, postDate=2022-06-05T09:26:35.756, likes=0, user=User [id=62970e6f7a9af102a7546332, username=suri, password=Sai@1234, email=suri@gmail.com, firstName=suri, lastName=suri, contactNumber=9701930783], replies=null]]]
+2022-06-05 09:26:43.355  INFO 1432 --- [http-nio-8080-exec-10] c.t.api.controller.TweetAppController    : Like a tweet 
+2022-06-05 09:26:43.374  INFO 1432 --- [http-nio-8080-exec-2] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:26:43.375  INFO 1432 --- [http-nio-8080-exec-2] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:26:43.376  INFO 1432 --- [http-nio-8080-exec-2] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:26:43.502  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:26:43.503  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:26:43.775  INFO 1432 --- [http-nio-8080-exec-4] c.tweetapp.api.service.TweetServiceImpl  : Liked Tweet with Id: 629c295a7a9af102a7546330 is Tweet [id=629c295a7a9af102a7546330, tweet=hey you, postDate=2022-06-05T09:26:10.871, likes=1, user=User [id=62970e6f7a9af102a7546331, username=suri, password=Sai@1234, email=suri@gmail.com, firstName=suri, lastName=suri, contactNumber=9701930783], replies=[Tweet [id=null, tweet=hey you, postDate=2022-06-05T09:26:35.756, likes=0, user=User [id=62970e6f7a9af102a7546332, username=suri, password=Sai@1234, email=suri@gmail.com, firstName=suri, lastName=suri, contactNumber=9701930783], replies=null]]]
+2022-06-05 09:26:43.857  INFO 1432 --- [http-nio-8080-exec-4] c.t.api.controller.TweetAppController    : Like a tweet 
+2022-06-05 09:26:43.877  INFO 1432 --- [http-nio-8080-exec-6] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:26:43.878  INFO 1432 --- [http-nio-8080-exec-6] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:26:43.878  INFO 1432 --- [http-nio-8080-exec-6] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:26:43.979  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:26:43.979  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:26:44.753  INFO 1432 --- [http-nio-8080-exec-8] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:1365901771}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:26:45.031  INFO 1432 --- [http-nio-8080-exec-8] c.tweetapp.api.service.TweetServiceImpl  : Liked Tweet with Id: 629c295a7a9af102a7546330 is Tweet [id=629c295a7a9af102a7546330, tweet=hey you, postDate=2022-06-05T09:26:10.871, likes=2, user=User [id=62970e6f7a9af102a7546331, username=suri, password=Sai@1234, email=suri@gmail.com, firstName=suri, lastName=suri, contactNumber=9701930783], replies=[Tweet [id=null, tweet=hey you, postDate=2022-06-05T09:26:35.756, likes=0, user=User [id=62970e6f7a9af102a7546332, username=suri, password=Sai@1234, email=suri@gmail.com, firstName=suri, lastName=suri, contactNumber=9701930783], replies=null]]]
+2022-06-05 09:26:45.144  INFO 1432 --- [http-nio-8080-exec-8] c.t.api.controller.TweetAppController    : Like a tweet 
+2022-06-05 09:26:45.164  INFO 1432 --- [http-nio-8080-exec-9] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:26:45.165  INFO 1432 --- [http-nio-8080-exec-9] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:26:45.166  INFO 1432 --- [http-nio-8080-exec-9] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:26:45.266  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:26:45.266  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:26:48.137  INFO 1432 --- [http-nio-8080-exec-1] c.tweetapp.api.service.TweetServiceImpl  : Deleted thw tweet for the tweet id629c295a7a9af102a7546330
+2022-06-05 09:26:48.137  INFO 1432 --- [http-nio-8080-exec-1] c.t.api.controller.TweetAppController    : Tweet deleted by the user
+2022-06-05 09:26:48.160  INFO 1432 --- [http-nio-8080-exec-3] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:26:48.160  INFO 1432 --- [http-nio-8080-exec-3] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:26:48.161  INFO 1432 --- [http-nio-8080-exec-3] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:26:48.274  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:26:48.274  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:27:14.233  INFO 1432 --- [http-nio-8080-exec-5] c.t.api.controller.TweetAppController    : Request to reset the password
+2022-06-05 09:27:14.557  INFO 1432 --- [http-nio-8080-exec-5] c.tweetapp.api.service.UserServiceImpl   : Reset password successful..
+2022-06-05 09:27:25.329 DEBUG 1432 --- [http-nio-8080-exec-8] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-06-05 09:27:25.329 DEBUG 1432 --- [http-nio-8080-exec-8] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-06-05 09:27:25.482  INFO 1432 --- [http-nio-8080-exec-8] c.tweetapp.api.service.UserServiceImpl   : suri--Logged in Successfully..!
+2022-06-05 09:27:25.525  INFO 1432 --- [http-nio-8080-exec-9] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:27:25.525  INFO 1432 --- [http-nio-8080-exec-9] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:27:25.526  INFO 1432 --- [http-nio-8080-exec-9] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:27:25.634  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:27:25.635  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:27:32.101  INFO 1432 --- [http-nio-8080-exec-1] c.t.api.controller.TweetAppController    : Retrived all the users
+2022-06-05 09:27:32.102  INFO 1432 --- [http-nio-8080-exec-1] c.tweetapp.api.service.UserServiceImpl   : Retriving all the users
+2022-06-05 09:27:34.429  INFO 1432 --- [http-nio-8080-exec-3] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:27:34.429  INFO 1432 --- [http-nio-8080-exec-3] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:27:34.431  INFO 1432 --- [http-nio-8080-exec-3] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:27:34.599  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:27:34.599  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:27:35.790  INFO 1432 --- [http-nio-8080-exec-5] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:27:35.791  INFO 1432 --- [http-nio-8080-exec-5] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:27:35.792  INFO 1432 --- [http-nio-8080-exec-5] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:27:35.901  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:27:35.902  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:28:10.382  INFO 1432 --- [RMI TCP Connection(25)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-06-05 09:28:10.590  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Revoke previously assigned partitions kafkanewMessage-0
+2022-06-05 09:28:10.591  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [kafkanewMessage-0]
+2022-06-05 09:28:10.592  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Member tweetapp-kafka.servicebus.windows.net:c:group_id:I:consumer-group_id-1-8f85e6a1905f4f8d8dc9056b34dacbcf sending LeaveGroup request to coordinator tweetapp-kafka.servicebus.windows.net:9093 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-06-05 09:28:10.593  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-1, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+2022-06-05 09:28:10.593  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-06-05 09:28:10.750  INFO 1432 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : group_id: Consumer stopped
+2022-06-05 09:28:10.769  INFO 1432 --- [RMI TCP Connection(25)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-05 09:28:10.775  INFO 1432 --- [RMI TCP Connection(25)-127.0.0.1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2022-06-05 09:28:10.880  INFO 1432 --- [RMI TCP Connection(25)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:6, serverValue:1442477910}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255 because the pool has been closed.
+2022-06-05 09:28:10.881  INFO 1432 --- [RMI TCP Connection(25)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:7, serverValue:1365901771}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255 because the pool has been closed.
+2022-06-05 09:28:55.141  INFO 3560 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 11.0.15 on LTIN293123 with PID 3560 (C:\Users\896825\Videos\TweetAPP\TweetAppBackEnd\target\classes started by 896825 in C:\Users\896825\Videos\TweetAPP\TweetAppBackEnd)
+2022-06-05 09:28:55.142 DEBUG 3560 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2022-06-05 09:28:55.143  INFO 3560 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2022-06-05 09:28:55.217  INFO 3560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-05 09:28:55.218  INFO 3560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-05 09:28:57.307  INFO 3560 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-05 09:28:57.380  INFO 3560 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 MongoDB repository interfaces.
+2022-06-05 09:28:58.189  INFO 3560 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-05 09:28:58.202  INFO 3560 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-05 09:28:58.203  INFO 3560 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-06-05 09:28:58.316  INFO 3560 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-05 09:28:58.317  INFO 3560 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3098 ms
+2022-06-05 09:28:58.539 DEBUG 3560 --- [restartedMain] TFilter$$EnhancerBySpringCGLIB$$f06edf6c : Filter 'JWTFilter' configured for use
+2022-06-05 09:28:58.680  INFO 3560 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[tweetapp-mongodb.mongo.cosmos.azure.com:10255], mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='globaldb'}
+2022-06-05 09:28:58.681  INFO 3560 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server tweetapp-mongodb.mongo.cosmos.azure.com:10255 to client view of cluster
+2022-06-05 09:28:58.912  INFO 3560 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-05 09:28:59.783  INFO 3560 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-06-05 09:28:59.955  INFO 3560 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-05 09:29:00.079  INFO 3560 --- [cluster-rtt-ClusterId{value='629c2a02d2f569795eba2355', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1824415743}] to tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:29:00.218  INFO 3560 --- [cluster-ClusterId{value='629c2a02d2f569795eba2355', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:210901707}] to tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:29:00.219  INFO 3560 --- [cluster-ClusterId{value='629c2a02d2f569795eba2355', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tweetapp-mongodb.mongo.cosmos.azure.com:10255, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=651973800, setName='globaldb', canonicalAddress=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, hosts=[tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255], passives=[], arbiters=[], primary='tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255', tagSet=TagSet{[Tag{name='region', value='Central India'}]}, electionId=null, setVersion=1, topologyVersion=null, lastWriteDate=null, lastUpdateTimeNanos=1092302197437899}
+2022-06-05 09:29:00.221  INFO 3560 --- [cluster-ClusterId{value='629c2a02d2f569795eba2355', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Adding discovered server tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255 to client view of cluster
+2022-06-05 09:29:00.223  INFO 3560 --- [cluster-ClusterId{value='629c2a02d2f569795eba2355', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Server tweetapp-mongodb.mongo.cosmos.azure.com:10255 is no longer a member of the replica set.  Removing from client view of cluster.
+2022-06-05 09:29:00.229  INFO 3560 --- [cluster-ClusterId{value='629c2a02d2f569795eba2355', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Setting max set version to 1 from replica set primary tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:29:00.229  INFO 3560 --- [cluster-ClusterId{value='629c2a02d2f569795eba2355', description='null'}-tweetapp-mongodb.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Discovered replica set primary tweetapp-mongodb.mongo.cosmos.azure.com:10255
+2022-06-05 09:29:00.364  INFO 3560 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [tweetapp-kafka.servicebus.windows.net:9093]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-05 09:29:00.910  INFO 3560 --- [restartedMain] o.a.k.c.s.authenticator.AbstractLogin    : Successfully logged in.
+2022-06-05 09:29:01.000  INFO 3560 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-06-05 09:29:01.002  INFO 3560 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-06-05 09:29:01.002  INFO 3560 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1654401540999
+2022-06-05 09:29:01.007  INFO 3560 --- [cluster-rtt-ClusterId{value='629c2a02d2f569795eba2355', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:1082995142}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:29:01.033  INFO 3560 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): kafkanewMessage
+2022-06-05 09:29:01.041  INFO 3560 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-06-05 09:29:01.060  INFO 3560 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-05 09:29:01.061  INFO 3560 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-06-05 09:29:01.078  INFO 3560 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-06-05 09:29:01.088  INFO 3560 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-06-05 09:29:01.203  INFO 3560 --- [cluster-ClusterId{value='629c2a02d2f569795eba2355', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:1530029107}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:29:01.204  INFO 3560 --- [cluster-ClusterId{value='629c2a02d2f569795eba2355', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=487287701, setName='globaldb', canonicalAddress=tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255, hosts=[tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255], passives=[], arbiters=[], primary='tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255', tagSet=TagSet{[Tag{name='region', value='Central India'}]}, electionId=null, setVersion=1, topologyVersion=null, lastWriteDate=null, lastUpdateTimeNanos=1092303182372900}
+2022-06-05 09:29:01.204  INFO 3560 --- [cluster-ClusterId{value='629c2a02d2f569795eba2355', description='null'}-tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255] org.mongodb.driver.cluster               : Discovered replica set primary tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:29:01.267  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-06-05 09:29:01.273  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-06-05 09:29:01.276  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2022-06-05 09:29:01.279  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2022-06-05 09:29:01.282  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2022-06-05 09:29:01.285  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2022-06-05 09:29:01.287  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2022-06-05 09:29:01.290  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2022-06-05 09:29:01.293  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2022-06-05 09:29:01.297  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2022-06-05 09:29:01.300  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2022-06-05 09:29:01.302  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2022-06-05 09:29:01.308  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2022-06-05 09:29:01.311  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2022-06-05 09:29:01.313  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2022-06-05 09:29:01.316  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2022-06-05 09:29:01.319  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2022-06-05 09:29:01.322  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2022-06-05 09:29:01.324  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2022-06-05 09:29:01.328  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2022-06-05 09:29:01.330  INFO 3560 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2022-06-05 09:29:01.478  INFO 3560 --- [restartedMain] com.tweetapp.api.TweetApplication        : Started TweetApplication in 6.995 seconds (JVM running for 8.34)
+2022-06-05 09:29:02.412  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator tweetapp-kafka.servicebus.windows.net:9093 (id: 2147483647 rack: null)
+2022-06-05 09:29:02.416  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-06-05 09:29:06.361  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Finished assignment for group at generation 12: {tweetapp-kafka.servicebus.windows.net:c:group_id:I:consumer-group_id-1-812553829fae48488ff232cd2b1b35db=Assignment(partitions=[kafkanewMessage-0])}
+2022-06-05 09:29:06.458  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation 12
+2022-06-05 09:29:06.459  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Notifying assignor about the new Assignment(partitions=[kafkanewMessage-0])
+2022-06-05 09:29:06.463  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: kafkanewMessage-0
+2022-06-05 09:29:06.668  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition kafkanewMessage-0 to the committed offset FetchPosition{offset=19, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[tweetapp-kafka.servicebus.windows.net:9093 (id: 0 rack: null)], epoch=absent}}
+2022-06-05 09:29:06.670  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkanewMessage-0]
+2022-06-05 09:29:46.758  INFO 3560 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-05 09:29:46.759  INFO 3560 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-05 09:29:46.761  INFO 3560 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-06-05 09:30:03.384 DEBUG 3560 --- [http-nio-8080-exec-6] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-06-05 09:30:03.385 DEBUG 3560 --- [http-nio-8080-exec-6] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-06-05 09:30:04.459  INFO 3560 --- [http-nio-8080-exec-6] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:753644811}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255
+2022-06-05 09:30:04.852  INFO 3560 --- [http-nio-8080-exec-6] c.tweetapp.api.service.UserServiceImpl   : suri--Logged in Successfully..!
+2022-06-05 09:30:05.041  WARN 3560 --- [http-nio-8080-exec-6] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [185] milliseconds.
+2022-06-05 09:30:05.183  INFO 3560 --- [http-nio-8080-exec-8] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:30:05.184  INFO 3560 --- [http-nio-8080-exec-8] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:30:05.194  INFO 3560 --- [http-nio-8080-exec-8] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [tweetapp-kafka.servicebus.windows.net:9093]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2022-06-05 09:30:05.622  INFO 3560 --- [http-nio-8080-exec-8] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-06-05 09:30:05.623  INFO 3560 --- [http-nio-8080-exec-8] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-06-05 09:30:05.623  INFO 3560 --- [http-nio-8080-exec-8] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1654401605622
+2022-06-05 09:30:06.482  INFO 3560 --- [http-nio-8080-exec-8] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:30:07.443  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:30:07.443  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:30:20.502  INFO 3560 --- [http-nio-8080-exec-9] c.t.api.controller.TweetAppController    : Tweet successfully posted by the user
+2022-06-05 09:30:20.705  INFO 3560 --- [http-nio-8080-exec-9] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:30:20.706  INFO 3560 --- [http-nio-8080-exec-9] c.tweetapp.api.service.TweetServiceImpl  : Tweet posted by user: suri
+2022-06-05 09:30:20.821  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Tweet posted by the user : suri
+2022-06-05 09:30:20.821  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Tweet posted by the user : suri
+2022-06-05 09:30:21.031  INFO 3560 --- [http-nio-8080-exec-1] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:30:21.032  INFO 3560 --- [http-nio-8080-exec-1] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:30:21.033  INFO 3560 --- [http-nio-8080-exec-1] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:30:21.147  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:30:21.149  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:30:35.225  INFO 3560 --- [http-nio-8080-exec-3] c.t.api.controller.TweetAppController    : Tweet successfully updated by the user
+2022-06-05 09:30:35.226  INFO 3560 --- [http-nio-8080-exec-3] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:30:35.226  INFO 3560 --- [http-nio-8080-exec-3] c.tweetapp.api.service.TweetServiceImpl  : Tweet is updated successfully...
+2022-06-05 09:30:35.343  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Tweet is updated..
+2022-06-05 09:30:35.343  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Tweet is updated..
+2022-06-05 09:30:35.348  INFO 3560 --- [http-nio-8080-exec-6] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:30:35.348  INFO 3560 --- [http-nio-8080-exec-6] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:30:35.351  INFO 3560 --- [http-nio-8080-exec-6] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:30:35.462  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:30:35.463  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:30:38.278  INFO 3560 --- [http-nio-8080-exec-8] c.tweetapp.api.service.TweetServiceImpl  : Liked Tweet with Id: 629c2a54d2f569795eba2356 is Tweet [id=629c2a54d2f569795eba2356, tweet=hey kalyan, postDate=2022-06-05T09:30:20.746, likes=0, user=User [id=62970e6fd2f569795eba2357, username=suri, password=Suri@123, email=suri@gmail.com, firstName=suri, lastName=suri, contactNumber=9701930783], replies=[]]
+2022-06-05 09:30:38.364  INFO 3560 --- [http-nio-8080-exec-8] c.t.api.controller.TweetAppController    : Like a tweet 
+2022-06-05 09:30:38.394  INFO 3560 --- [http-nio-8080-exec-9] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:30:38.394  INFO 3560 --- [http-nio-8080-exec-9] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:30:38.395  INFO 3560 --- [http-nio-8080-exec-9] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:30:38.509  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:30:38.510  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:30:53.753  INFO 3560 --- [http-nio-8080-exec-1] c.t.api.controller.TweetAppController    : Replying to the tweet by user
+2022-06-05 09:30:53.965  INFO 3560 --- [http-nio-8080-exec-3] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:30:53.966  INFO 3560 --- [http-nio-8080-exec-3] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:30:53.968  INFO 3560 --- [http-nio-8080-exec-3] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:30:54.084  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:30:54.085  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:31:28.478  INFO 3560 --- [http-nio-8080-exec-6] c.t.api.controller.TweetAppController    : Tweet successfully updated by the user
+2022-06-05 09:31:28.479  INFO 3560 --- [http-nio-8080-exec-6] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:31:28.480  INFO 3560 --- [http-nio-8080-exec-6] c.tweetapp.api.service.TweetServiceImpl  : Tweet is updated successfully...
+2022-06-05 09:31:28.604  INFO 3560 --- [http-nio-8080-exec-8] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:31:28.605  INFO 3560 --- [http-nio-8080-exec-8] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:31:28.606  INFO 3560 --- [http-nio-8080-exec-8] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:31:28.613  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Tweet is updated..
+2022-06-05 09:31:28.614  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Tweet is updated..
+2022-06-05 09:31:28.741  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:31:28.742  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:31:34.303  INFO 3560 --- [http-nio-8080-exec-9] c.tweetapp.api.service.TweetServiceImpl  : Liked Tweet with Id: 629c2a54d2f569795eba2356 is Tweet [id=629c2a54d2f569795eba2356, tweet=hey kal, postDate=2022-06-05T09:30:20.746, likes=1, user=User [id=62970e6fd2f569795eba2359, username=suri, password=Suri@123, email=suri@gmail.com, firstName=suri, lastName=suri, contactNumber=9701930783], replies=[Tweet [id=null, tweet=hey suri, postDate=2022-06-05T09:30:53.675, likes=0, user=User [id=62970e6fd2f569795eba235a, username=suri, password=Suri@123, email=suri@gmail.com, firstName=suri, lastName=suri, contactNumber=9701930783], replies=null]]]
+2022-06-05 09:31:34.382  INFO 3560 --- [http-nio-8080-exec-9] c.t.api.controller.TweetAppController    : Like a tweet 
+2022-06-05 09:31:34.406  INFO 3560 --- [http-nio-8080-exec-1] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:31:34.406  INFO 3560 --- [http-nio-8080-exec-1] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:31:34.407  INFO 3560 --- [http-nio-8080-exec-1] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:31:34.521  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:31:34.522  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:31:35.023  INFO 3560 --- [http-nio-8080-exec-3] c.tweetapp.api.service.TweetServiceImpl  : Liked Tweet with Id: 629c2a54d2f569795eba2356 is Tweet [id=629c2a54d2f569795eba2356, tweet=hey kal, postDate=2022-06-05T09:30:20.746, likes=2, user=User [id=62970e6fd2f569795eba2359, username=suri, password=Suri@123, email=suri@gmail.com, firstName=suri, lastName=suri, contactNumber=9701930783], replies=[Tweet [id=null, tweet=hey suri, postDate=2022-06-05T09:30:53.675, likes=0, user=User [id=62970e6fd2f569795eba235a, username=suri, password=Suri@123, email=suri@gmail.com, firstName=suri, lastName=suri, contactNumber=9701930783], replies=null]]]
+2022-06-05 09:31:35.126  INFO 3560 --- [http-nio-8080-exec-3] c.t.api.controller.TweetAppController    : Like a tweet 
+2022-06-05 09:31:35.145  INFO 3560 --- [http-nio-8080-exec-6] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:31:35.146  INFO 3560 --- [http-nio-8080-exec-6] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:31:35.147  INFO 3560 --- [http-nio-8080-exec-6] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:31:35.272  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:31:35.273  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:31:44.158  INFO 3560 --- [http-nio-8080-exec-8] c.t.api.controller.TweetAppController    : Replying to the tweet by user
+2022-06-05 09:31:44.361  INFO 3560 --- [http-nio-8080-exec-9] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:31:44.362  INFO 3560 --- [http-nio-8080-exec-9] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:31:44.364  INFO 3560 --- [http-nio-8080-exec-9] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:31:44.542  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:31:44.542  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:31:47.441  INFO 3560 --- [http-nio-8080-exec-1] c.tweetapp.api.service.TweetServiceImpl  : Deleted thw tweet for the tweet id629c2a54d2f569795eba2356
+2022-06-05 09:31:47.441  INFO 3560 --- [http-nio-8080-exec-1] c.t.api.controller.TweetAppController    : Tweet deleted by the user
+2022-06-05 09:31:47.455  INFO 3560 --- [http-nio-8080-exec-3] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-05 09:31:47.455  INFO 3560 --- [http-nio-8080-exec-3] com.tweetapp.api.kafka.ProducerService   : Publishing to topic kafkanewMessage
+2022-06-05 09:31:47.456  INFO 3560 --- [http-nio-8080-exec-3] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-05 09:31:47.568  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-05 09:31:47.568  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-05 09:32:10.987  INFO 3560 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-06-05 09:32:11.198  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Revoke previously assigned partitions kafkanewMessage-0
+2022-06-05 09:32:11.200  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [kafkanewMessage-0]
+2022-06-05 09:32:11.201  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Member tweetapp-kafka.servicebus.windows.net:c:group_id:I:consumer-group_id-1-812553829fae48488ff232cd2b1b35db sending LeaveGroup request to coordinator tweetapp-kafka.servicebus.windows.net:9093 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-06-05 09:32:11.202  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-1, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+2022-06-05 09:32:11.203  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-06-05 09:32:11.298  INFO 3560 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : group_id: Consumer stopped
+2022-06-05 09:32:11.320  INFO 3560 --- [RMI TCP Connection(13)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-05 09:32:11.327  INFO 3560 --- [RMI TCP Connection(13)-127.0.0.1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2022-06-05 09:32:11.424  INFO 3560 --- [RMI TCP Connection(13)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:5, serverValue:753644811}] to tweetapp-mongodb-centralindia.mongo.cosmos.azure.com:10255 because the pool has been closed.
